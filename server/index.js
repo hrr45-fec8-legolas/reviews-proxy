@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/../public'));
 
 const reviewsProxy = createProxyMiddleware(
   {
-    target: 'http://localhost:3004',
+    target: 'http://18.212.184.37:3004',
   },
   );
   app.use(
@@ -25,7 +25,7 @@ const reviewsProxy = createProxyMiddleware(
 
 const itemDetailsProxy = createProxyMiddleware(
   {
-    target: 'http://localhost:3002',
+    target: 'http://34.201.53.74:3002',
   },
   );
   app.use(
@@ -35,7 +35,7 @@ const itemDetailsProxy = createProxyMiddleware(
 
 const relatedProxy = createProxyMiddleware(
   {
-    target: 'http://localhost:3003',
+    target: 'http://54.166.182.193:3003',
   },
   );
   app.use(
@@ -45,7 +45,7 @@ const relatedProxy = createProxyMiddleware(
 
 const singleItemProxy = createProxyMiddleware(
   {
-    target: 'http://localhost:3001',
+    target: 'http://3.132.5.204:3001',
   },
   );
   app.use(
